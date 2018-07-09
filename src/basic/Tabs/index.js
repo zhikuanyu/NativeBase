@@ -172,6 +172,7 @@ const ScrollableTabView = createReactClass({
         pagingEnabled
         automaticallyAdjustContentInsets={false}
         keyboardShouldPersistTaps="handled"
+        refreshControl={this.props.refreshControl}
         contentOffset={{
           x: this.props.initialPage * this.state.containerWidth
         }}
